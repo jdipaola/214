@@ -1,0 +1,99 @@
+Jeff DiPaola
+CS214
+Assignment 3 - Test Cases
+
+Please Note: The "test" folder has all test files mentioned below.
+
+=================================================
+Test Case 1: Single, regular file
+	Input: "This an$example12 mail@rutgers"
+	Command: ./index out1.txt test1.txt
+	Correct!
+=================================================
+Test Case 2: Input file does not exist
+	Command: ./index out.txt a.txt
+	Output: Incorrect directory/file as input
+	Correct!
+=================================================
+Test Case 3: Input folder does not exist
+	Command: ./index out.txt folder
+	Output: Incorrect directory/file as input
+	Correct!
+=================================================
+Test Case 4: Empty Folder (/test/)
+	Command: ./index out4.txt test
+	Output: Null file - Only contains a zero
+	Correct!
+=================================================
+Test Case 5: Empty test file
+	Command: ./index out5.txt test5.txt
+	Output: Null file - Only contains a zero
+	Correct!
+=================================================
+Test Case 6: Output file already exists
+	Command: ./index out.txt test.txt
+	Output:  The file "out.txt" already exists. Would you like to overwite it? (Y/N)
+		Choice Y: Overwrites
+		Choice N: Enter the new filename:
+			Enter "out.txt": Loops back
+			Enter "yay.txt": Writes to yay.txt
+		Choice Q: Invalid Input: Please input either Y or N
+	Correct!
+=========================================================================================
+Test Case 7: Multiple Separators
+	Input File: "Hello////world    this@this test!"
+	Command: ./index out7.txt test7.txt
+	Correct!
+========================================================
+Test Case 8: Capitalization doesn't matter
+	Input File: "HELLO HeLlO hello"
+	Correct!
+========================================================
+Test Case 9: Folders & Multiple files
+	Input Tree: \test\boo.txt
+		    \test\baa.txt
+	Correct!
+========================================================
+Test Case 10: Nexted Folders
+	Input Tree: \test\test1\boo.txt
+		    \test\baa.txt
+		    \test\test1\test2\test3\
+		    \test\test4\test2\test3\sun.txt
+	Correct!
+========================================================
+Test Case 11: No args
+	Input: ./index 
+	Output: Error: Input must be of form: index <inverted-index file name> <directory or file name>
+	Correct!
+=========================================================
+Test Case 12: Only One argument
+	Input: ./index out.txt
+	Output: Error: Input must be of form: index <inverted-index file name> <directory or file name>
+	Correct!
+=========================================================
+Test Case 13: More than two arguments
+	Input: ./index a.txt b.txt c.txt
+	Output: Error: Input must be of form: index <inverted-index file name> <directory or file name>
+	Input: ./index a b c d e f g
+	Output: Error: Input must be of form: index <inverted-index file name> <directory or file name>
+	Correct!
+=========================================================
+Test Case 14: Large Files
+	.txt versions of Hamlet and Romeo & Juliet were obtained via Project Gutenberg (www.gutenberg.org)
+	I attempted to run both via invoking the indexer on:
+		/file/hamlet.txt
+		/file/romeo.txt
+	However, it took too long to traverse files and my session timed out. So, I tried each file 
+	individually. This led to the same problem of the timeout. However, an out.txt was partially 
+	produced on one run and looks like it worked properly. I cannot say for sure, though, because 
+	I don't know what the actual count/answers should look like.
+==========================================================
+The input files are listed below.
+
+baa.txt: "A cat name Baa"
+boo.txt: "A dog name name Boo"
+sun.txt: "you found the sun!"
+test1.txt: "This an$example12 mail@rutgers"
+test5.txt: ""
+test7.txt: "Hello////world    this@this test!"
+test8.txt: "HELLO HeLlO hello"
