@@ -1,0 +1,72 @@
+testplan.txt
+Assignment 2 Test Cases
+Jeff DiPaola
+
+The main file was edited each time with different test case values.
+It tests each part of sorted-list c:
+ - SLCreate, create an iterator
+ - SLInsert, used to populate the SortedListPtr
+ - Inital list is printed to be sure that SLInsert worked properly
+ - SLCreateIterator, an iterator is created, it's existance is checked
+ - SLNextItem, we crawl through the list, output the elements in order - this is also a test of SLCreate and the SortedListIteratorPtr
+ - SLGetItem is incorporated in the background
+ - SLRemove, removes a specified item from the array
+ - SLDestroyIterator, to destroy the iterator after running through it
+ - SLDestroy, destroys our sorted list ptr
+
+=====================
+Test case 1: Integers
+=====================
+	Input: 4, 1, 5, 2, 3, 8, 10
+	Expected Output: 10, 8, 5, 4, 3, 2, 1
+	Actual Output: 10, 8, 5, 4, 3, 2, 1
+	Remove: 4
+	Expected Output: 10, 8, 5, 3, 2, 1
+	Actual Output: 10, 8, 5, 3, 2, 1
+	Successful!
+
+====================
+Test Case 2: Doubles
+====================
+	Input: 4.28, 4.29, 1.7, 2.0, 3.9, 8.1, 10.2
+	Expected Output: 10.2, 8.1, 4.29, 4.28, 3.9, 2.0, 1.7
+	Actual Output: 10.2, 8.1, 4.29, 4.28, 3.9, 2.0, 1.7
+	Remove: 4.29
+	Expected Output: 10.2, 8.1, 4.28, 3.9, 2.0, 1.7
+	Actual Output: 10.2, 8.1, 4.28, 3.9, 2.0, 1.7
+	Successful!
+
+=======================
+Test Case 3: Characters (& removal of non-present item)
+=======================
+	Input: c, r, q, a, z, d, e
+	Expected Output: z, r, q, e, d, c, a
+	Actual Output: z, r, q, e, d, c, a
+	Remove: f
+	Expected Output: z, r, q, e, d, c, a
+	Actual Output: z, r, q, e, d, c, a
+	Successful!
+
+=============================
+Test Case 4: Ordered Integers
+=============================
+	Input: 1, 2, 3, 4, 5, 6
+	Expected Output: 6, 5, 4, 3, 2, 1
+	Actual Output: 6, 5, 4, 3, 2, 1
+	Remove: 1
+	Expected Output: 6, 5, 4, 3, 2
+	Actual Output: 6, 5, 4, 3, 2
+
+==================
+Test Case 5: Words
+==================
+	Input: cat, dog, bird, spider
+	Expected Output: spider, dog, cat, bird
+	Actual Output: spider, dog, cat, bird
+
+================================
+Test Case 6: Duplicate Insertion
+================================
+	Input: 1, 2, 3, 1
+	Expected Output: Error - Program Terminates
+	Actual Output: Error, SLInsert returns a 0
