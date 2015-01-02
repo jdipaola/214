@@ -1,0 +1,233 @@
+Jeff DiPaola
+CS 214
+Assignment 6 - Test Cases
+
+My test.c program does a thorough job of testing all possible test cases. 
+Below are the possible cases it presents the user with:
+
+==================================================================================================
+Test Cases:
+        (0) Exit
+        (1) malloc & free of a char*
+        (2) malloc & free of an int*
+        (3) free of a pointer that was not malloc'd after mallocing a different pointer
+        (4) free of a pointer that wasn't malloc'd without any other malloc
+        (5) free of a pointer that was already freed
+        (6) malloc ptr, free ptr, malloc same ptr, free same ptr
+        (7) freeing pointers to dynamic mem that weren't returned from malloc
+        (8) malloc 3 ptrs, free middle ptr, then first, then last
+        (9) malloc 3 ptrs, free first, last, middle
+        (10) malloc 3 ptrs, free last, first, middle
+        (11) malloc 3 ptrs, free first, middle, last
+        (12) malloc & free of entire available area
+        (13) malloc of more than available area
+        (14) malloc of entire area, free part, malloc that part
+        (15) malloc of entire area, try to malloc more
+        (16) malloc most of the area, try to malloc more than what's left
+
+Extra Credit Test Cases:
+        (17) test of calloc
+        (18) Free a ptr not previously returned by malloc/calloc
+        (19) Free a ptr not in the heap
+
+Enter 1-19 to select a test case or 0 to exit
+==================================================================================================
+
+Below is the execution and output of each test case:
+
+===================================================
+Test Case 1:
+        char *ctemp = malloc(6*sizeof(char))
+        free(ctemp)
+Test Case 1 Complete.
+
+Performed as expected.
+===================================================
+Test Case 2:
+        int *itemp = malloc(10*sizeof(int))
+        free(itemp)
+Test Case 2 Complete.
+
+Performed as expected.
+===================================================
+Test Case 3:
+        int *temp3 = mymalloc(sizeof(int))
+        char x
+        myfree(&x)
+Freeing &x
+ERROR: Free called on ptr that has not had memory allocated for it in file test.c at line 71
+Freeing temp3
+Test Case 3 Complete.
+
+Performed as expected.
+===================================================
+Test Case 4:
+        int temp4
+        free(&temp4)
+ERROR: Free called on ptr that has not had memory allocated for it in file test.c at line 81
+Test Case 4 Complete.
+
+Performed as expected.
+===================================================
+Test Case 5:
+        char *temp5 = malloc(1000*sizeof(char))
+        free(temp5)
+        free(temp5)
+First free
+Second free
+ERROR: Free called on ptr that has not had memory allocated for it in file test.c at line 93
+Test Case 5 Complete.
+
+Performed as expected.
+===================================================
+Test Case 6:
+        char*temp6 = malloc(4000*sizeof(char))
+        free(temp6)
+        temp6 = malloc(2000*sizeof(char))
+        free(temp6)
+First free
+Second free
+Test Case 6 Complete.
+
+Performed as expected.
+===================================================
+Test Case 7:
+        char *p = (char*)malloc(200)
+        free(p + 10)
+        free(p)
+free(p + 10)
+ERROR: Free called on ptr that has not had memory allocated for it in file test.c at line 116
+Test Case 7 Complete.
+
+Performed as expected.
+===================================================
+Test Case 8:
+        int *temp8a = malloc(600*sizeof(int))
+        char *temp8b = malloc(1000*sizeof(char))
+        int *temp8c = malloc(100*sizeof(int))
+        free(temp8b)
+        free(temp8a)
+        free(temp8c)
+Freeing middle ptr
+Freeing first ptr
+Freeing last ptr
+Test Case 8 Complete.
+
+Performed as expected.
+===================================================
+Test Case 9:
+        char *temp9a = malloc(800*sizeof(char))
+        char *temp9b = malloc(200*sizeof(char))
+        char *temp9c = malloc(100*sizeof(char))
+        free(temp9a)
+        free(temp9c)
+        free(temp9b)
+Freeing first
+Freeing last
+Freeing middle
+Test Case 9 Complete.
+
+Performed as expected.
+===================================================
+Test Case 10:
+        char*temp10a = malloc(800*sizeof(char))
+        char *temp10b = malloc(200*sizeof(char))
+        char *temp10c = malloc(100*sizeof(char))
+        free(temp10c)
+        free(temp10a)
+        free(temp10b)
+Freeing last
+Freeing first
+Freeing middle
+Test Case 10 Complete.
+
+Performed as expected.
+===================================================
+Test Case 11:
+        char *temp11a = malloc(800*sizeof(char))
+        char *temp11b = malloc(200*sizeof(char))
+        char *temp11c = malloc(100*sizeof(char))
+        free(temp11a)
+        free(temp11b)
+        free(temp11c)
+Freeing first
+Freeing middle
+Freeing last
+Test Case 11 Complete.
+
+Performed as expected.
+===================================================
+Test Case 12:
+        char *temp12 = malloc(5000*sizeof(char))
+        free(temp12)
+Test Case 12 Complete.
+
+Performed as expected.
+===================================================
+Test Case 13:
+        char *temp13 = malloc(5001*sizeof(char))
+        int *temp13b = malloc(1251*sizeof(int))
+        char *temp13c = malloc(8000*sizeof(char))
+Not enough memory available to perform malloc in file test.c at line 202
+Not enough memory available to perform malloc in file test.c at line 203
+Not enough memory available to perform malloc in file test.c at line 204
+Test Case 13 Complete.
+
+Performed as expected.
+===================================================
+Test Case 14:
+        char *temp14a = malloc(3000*sizeof(char))
+        char *temp14b = malloc(500*sizeof(char))
+        char *temp14c = malloc(1500*sizeof(char))
+        free(temp14b)
+        char *temp14d = malloc(450*sizeof(char))
+free(temp14b)
+malloc temp14d
+Test Case 14 Complete.
+
+Performed as expected.
+===================================================
+Test Case 15:
+        char *temp15a = malloc(5000*sizeof(char))
+        char *temp15b = malloc(sizeof(char))
+Mallocing too much mem
+Not enough memory available to perform malloc in file test.c at line 232
+Test Case 15 Complete.
+
+Performed as expected.
+===================================================
+Test Case 16:
+        char *temp16a = malloc(1000*sizeof(char))
+        char *temp16b = malloc(2000*sizeof(char))
+        char *temp16c = malloc(1580*sizeof(char))
+        free(temp16b)
+        char *temp16d = malloc(2200*sizeof(char))
+Mallocing temp16d
+Not enough memory available to perform malloc in file test.c at line 247
+Test Case 16 Complete.
+
+Performed as expected.
+===================================================
+Test Case 17:
+        char *temp17 = calloc(1000*sizeof(char))
+        free(temp17)
+Test Case 17 Complete.
+
+Performed as expected.
+===================================================
+Test Case 18:
+        int *temp18 = malloc(10*sizeof(int))
+        free(temp18 + 4)
+ERROR: Free called on ptr that has not had memory allocated for it in file test.c at line 267
+Test Case 18 Complete.
+
+Performed as expected.
+===================================================
+Test Case 19:
+        int *temp19 = malloc(10*sizeof(int))
+        free(temp19 - 5)
+ERROR: Free called on ptr that has not had memory allocated for it in file test.c at line 277
+Test Case 19 Complete.
+
+Performed as expected.
+===================================================
