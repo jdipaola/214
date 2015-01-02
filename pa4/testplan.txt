@@ -1,0 +1,117 @@
+Jeff DiPaola
+CS 214
+Assignment 4 - Test Cases
+
+Test Case 1: Too many arguments to ./search
+	Input: ./search too many args
+	Output: Error: Input must be of the form: search <inverted-index file name>
+	Correct!
+===============================================
+Test Case 2: Too few arguments to ./search
+	Input: ./search
+	Output: Error: Input must be of the form: search <inverted-index file name>
+	Correct!
+===============================================
+Test Case 3: Index file doesn't exist
+	Input: ./search whatisthis.txt
+	Output: Error opening inverted index: whatisthis.txt
+	Correct!
+===============================================
+Test Case 4: q
+	Input: q
+	Output: Exiting...
+	Correct!
+================================================
+Test Case 5: Using sa - Two words that aren't a match
+	File: out.txt
+	Input: sa cat dog
+	Output: Your search yielded no results
+	Correct!
+	Input: sa dog cat
+	Output: Your search yielded no results
+	Correct!
+===================================================
+Test Case 6: Using sa - Two words that are a match
+	File: out.txt
+	Input: sa baa cat
+	Output: Your search word(s) were contained in the files: baa.txt
+	Correct!
+	Input: sa cat baa
+	Output: Your search word(s) were contained in the files: baa.txt
+	Correct!
+	Input: sa a cat
+	Output: Your search word(s) were contained in the files: baa.txt
+	Correct!
+	Input: sa cat a
+	Output: Your search word(s) were contained in the files: baa.txt
+	Correct!
+===================================================
+Test Case 7: Using sa - Four words that aren't a match
+	File: out.txt
+	Input: sa a dog boo baa
+	Output: Your search yielded no results
+	Correct!
+===================================================
+Test Case 8: Using sa - Four words that are a match
+	File: out.txt
+	Input: sa a name cat baa
+	Output: Your search word(s) were contained in the files: baa.txt
+	Correct!
+===================================================
+Test Case 9: Using so - Two words with different files
+	File: out.txt
+	Input: so dog baa
+	Output: Your search word(s) were contained in the files: boo.txt baa.txt
+	Correct!
+	Input: so name a
+	Output: Your search word(s) were contained in the files: boo.txt baa.txt
+	Correct!
+	Input: so a name
+	Output: Your search word(s) were contained in the files: baa.txt boo.txt
+	Correct!
+======================================================
+Test Case 10: Using so - Two words from the same file
+	File: out.txt
+	Input: so dog cat
+	Output: Your search word(s) were contained in the files: boo.txt baa.txt
+	Correct!
+=======================================================
+Test Case 11: Incorrect Input
+	File: out.txt
+	Input: What am I doing!!!
+	Output: Incorrect search term error
+	Correct!
+	Input: sat down
+	Output: Incorrect search term error
+	Correct!
+	Input: Sorry this is wrong
+	Output: Incorrect search term error
+	Correct!
+	Input: quiet
+	Output: Incorrect search term error
+	Correct!
+======================================================
+Test Case 12: Using so - Words that don't exist
+	File: out.txt
+	Input: so none of these
+	Output: Your search yielded no results
+	Correct!
+=======================================================
+Test Case 13: Using sa - Only one word
+	File: out.txt
+	Input: sa a
+	Output: Your search word(s) were contained in the files: baa.txt boo.txt
+	Correct!
+=======================================================
+Test Case 14: Using so - only one word
+	File: out.txt
+	Input: so dog
+	Output: Your search word(s) were contained in the files: boo.txt
+	Correct!
+========================================================
+Test Case 15: Blank search file
+	File: blank.txt
+	Input: ./search blank.txt
+	Output: Error: Inverted index blank.txt is an empty file.
+	Correct!
+==========================================================

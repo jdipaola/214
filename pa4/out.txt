@@ -1,0 +1,18 @@
+<list> a
+baa.txt 1 boo.txt 1 
+</list>
+<list> baa
+baa.txt 1 
+</list>
+<list> boo
+boo.txt 1 
+</list>
+<list> cat
+baa.txt 1 
+</list>
+<list> dog
+boo.txt 1 
+</list>
+<list> name
+boo.txt 2 baa.txt 1 
+</list>
