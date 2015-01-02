@@ -1,0 +1,129 @@
+Jeff DiPaola
+CS214
+Assignment 1 - Test Cases
+
+I'd like to start by running through all test cases offered by the instructors.
+
+Test Case 1:
+	Input: " " "today is sunny"
+	Expected Output: "today", "is", "sunny"
+	Actual Output: "today", "is", "sunny"
+==============================================
+Test Case 2:
+	Input: "/?" "/usr/local?/bin? share"
+	Expected Output: "usr", "local", "bin", " share"
+	Actual Output: "usr", "local", "bin", " share"
+========================================================
+Test Case 3:
+	Input: "\n" "hello\nworld"
+	Expected Output: "hello", "world"
+	Actual Output: "hello", "world"
+=========================================
+Test Case 4:
+	Input: "e\v\t" "hel\vlo \tworld"
+	Expected Output: "h", "l", "lo", "world"
+	Actual Output: "h", "l", "lo", "world"
+=================================================
+Test Case 5: 
+	Input: "m" "mmmmm"
+	Expected Output: None
+	Actual Output: None
+===============================
+Test Case 6: 
+	Input: "" "you have to print out hex of \a"
+	Expected Output: "You have to print out hex of [0x07]"
+	Actual Output: "You have to print out hex of [0x07]"
+==============================================================
+Test Case 7:
+	Input "\n" ""
+	Expected Output: None
+	Actual Output: None
+===============================
+Test Case 8:
+	Input "\k" "hello\kworld"
+	Expected Output: "hello", "world"
+	Actual Output: "hello", "world"
+=========================================
+Test Case 9:
+	Input: "k" "hello\kworld"
+	Expected Output: "hello", "world"
+	Actual Output: "hello", "world"
+==========================================
+Test Case 10:
+	Input: "\\\\" "\\\\\\hello\\\\\\world\\\\"
+	Expected Output: "hello", "world"
+	Actual Output: "hello", "world"
+========================================
+Test Case 11:
+	Input: "\b\le" "ShE sells sEa shells by the sEa shorE\\"
+	Expected Output: "ShE s", "s sEa sh", "s by th", " sEa shorE"
+	Actual Output: "ShE s", "s sEa sh", "s by th". " sEa shorE"
+=====================================================================
+Test Case 12:
+	Input: "\k\\" "hello\kworld"
+	Expected Output: "hello", "world"
+	Actual Output: "hello", "world"
+==========================================
+Test Case 13:
+	Input: "" "\\\""
+	Expected Output: "[0x22]"
+	Actual Output: "[0x22]"
+===================================
+Test Case 14:
+	Input: "too" "many" "args"
+	Expected Output: Error that indicates too many args
+	Actual Output: "Error: Too many arguments passed."
+=============================================================
+Test Case 15:
+	Input: None
+	Expected Output: Error that indicates too few args
+	Actual Output: "Error: Not enough arguments passed."
+=============================================================
+
+The given test cases went over most of what is expected, however I did come up with some more.
+
+Test Case 16:
+	Input: "q" "\nq"
+	Expected Output: "[0x0a]"
+	Actual Output: "[0x0a]"
+=================================
+Test Case 17:
+	Input: "" "\t"
+	Expected Output: "[0x09]"
+	Actual Output: "[0x09]"
+=====================================
+Test Case 18:
+	Input: "" "\v"
+	Expected Output: "[0x0b]"
+	Actual Output: "[0x0b]"
+==================================
+Test Case 19:
+	Input: "" "\b"
+	Expected Output: "[0x08]"
+	Actual Output: "[0x08]"
+===================================
+Test Case 20:
+	Input: "" "\r"
+	Expected Output: "[0x0d]"
+	Acutal Output: "[0x0d]"
+===================================
+Test Case 21:
+	Input: "" "\f"
+	Expected Output: "[0x0c]"
+	Actual Output: "[0x0c]"
+===================================
+Test Case 22:
+	Input: "q" "Testi\ng removing twoq esc\ape chars"
+	Expected Output: "Testi[0x0a]g removing two", " esc[0x07]pe chars"
+	Actual Output: "Testi[0x0a]g removing two", " esc[0x07]pe chars"
+=========================================================================
+Test Case 23:
+	Input: "x" "\n At xbegining"
+	Expected Output: "[0x0a] At ", "begining"
+	Actual Output: "[0x0a] At ", "begining"
+==================================================
+Test Case 24:
+	Input: "wat" "yyyyyy{[hit enter key]}"
+	Expected Output: "yyyyyy{[0x0a]}"
+	Acutal Output: "yyyyyy{
+				[0x0a]}"
