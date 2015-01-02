@@ -1,0 +1,115 @@
+Jeff DiPaola
+CS 214
+Assignment 5 - Test Cases
+
+
+Test Case 1: Too few arguments to ./books
+	Input: ./books
+	Output: Error indicating wrong input format
+	Correct!
+	Input: ./books database.txt
+	Output: Error indicating wrong input format
+	Correct!
+	Input: ./books database.txt orders.txt 
+	Output: Error indicating wrong input format
+	Correct!
+======================================================
+Test Case 2: Too many arguments to ./books
+	Input: ./books test1.txt test2.txt test3.txt test4.txt
+	Output: Error indicating wrong input format
+	Correct!
+	Input: ./books database.txt orders.txt categories.txt orders.txt
+	Output: Error indicating wrong input format
+	Correct!
+========================================================
+Test Case 3: Files don't exist
+	Input: ./books test1.txt test2.txt test3.txt
+	Output: Customer Database file: test1.txt was not of the correct type
+	Correct!
+	Input: ./books databse.txt test1.txt test2.txt
+	Output: Book Order file: test1.txt was not of the correct type
+	Correct!
+	Input: ./books database.txt orders.txt test.txt
+	Output: Book Category file: test.txt was not of the correct type
+	Correct!
+============================================================
+Test Case 4: Files are directories
+	NOTE: For this test directories test1 test2 and test3 were created
+	Input: ./books test1 test2 test3
+	Output: Customer Database file: test1 was not of the correct type
+	Correct!
+	Input: ./books databse.txt test1 test2
+	Output: Book Order file: test1 was not of the correct type
+	Correct!
+	Input: ./books database.txt orders.txt test3
+	Output: Book Category file: test3 was not of the correct type
+	Correct!
+============================================================
+Test Case 5: Files are blank
+	Input: ./books blank.txt blank.txt blank.txt
+	Output: Error: Category file blank.txt is an empty file.
+	Correct!
+	Input: ./books database.txt blank.txt blank.txt
+	Output: Error: Category file blank.txt is an empty file.
+	Correct!
+	Input: ./books database.txt orders.txt blank.txt
+	Output: Error: Category file blank.txt is an empty file.
+	Correct!
+	Input: ./books database.txt blank.txt categories.txt
+	Output: The book order input file blank.txt is empty
+	Correct!
+============================================================
+Test Case 6: Invalid Categories in orders
+	Input: "Really good book"|11.31|5|HOUSING02 was put at the top of "orders.txt"
+	Correct!
+	Input: "Really good book"|11.31|5|HOUSING02 was put in the middle of "orders.txt"
+	Correct!
+	Input: "Really good book"|11.31|5|HOUSING02 was put at the end of "orders.txt"
+	Correct!
+	Output for All cases: 
+		In all cases the output was exactly as would be expected with appropriate input.
+		However, amongst the order confirmations & rejections you will find the following error:
+			Order for Really good book neglected. Dropping order.
+			Reason: Category HOUSING02 not found.
+		An example of this output can be seen in output2.txt
+=============================================================
+Test Case 7: Invalid User ID in orders
+	Input: "Really good book"|11.31|6|HOUSING01 was put at the top of "orders.txt"
+	Correct!
+	Input: "Really good book"|11.31|6|HOUSING01 was put in the middle of "orders.txt"
+	Correct!
+	Input: "Really good book"|11.31|6|HOUSING01 was put at the end of "orders.txt"
+	Correct!
+	Output for All cases:
+		In all cases the output was exactly as would be expected with appropriate input.
+		However, amongst the order confirmations & rejections you will find the following error:
+			Order for Really good book neglected. Dropping order.
+			Reason: UserID 6 not found.
+		An example of this output can be seen in output3.txt
+==============================================================
+Test Case 8: Only one order, Only one UID used, Only one Category used
+	Input: ./books database.txt one_order.txt categories.txt
+	Output: Behaved as expected, sample output available in output4.txt
+	Correct!
+=============================================================
+Test Case 9: Only one order, has an invalid UID
+	Input: "Really good book"|11.31|6|HOUSING01 was the only entry in one_order.txt
+	Command: ./books database.txt one_order.txt categories.txt
+	Output: Gave invalid UID error & output order list. See output5.txt
+	Correct!
+=============================================================
+Test Case 10: Only one order, has an invalid category
+	Input: "Really good book"|11.31|5|HOUSING02 was the only entry in one_order.txt
+	Command: ./books database.txt one_order.txt categories.txt
+	Output: Gave an invalid category error. See output6.txt
+	Correct!
+==============================================================
+Test Case 11: Regular input
+	Input: ./books database.txt orders.txt categories.txt
+	Output: Responded as expected. See output.txt
+	NOTE: Different users may have different successful/rejected orders on successive runs.
+			this is due to the consumer threads running different things in different orders.
+	NOTE: My output is identical to the example output except that the orders are arranged
+			from most recent to least recent, essentially inverting them. The order in which
+			they should be displayed was not specified in the assignment so it was not changed.
+	Correct!

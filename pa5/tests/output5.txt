@@ -1,0 +1,48 @@
+./books database.txt one_order.txt categories.txt
+Order for Really good book neglected. Dropping order.
+ Reason: UserID 6 not found.
+
+
+
+
+Total Revenue Gained: 0.000000
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Brian Russell
+Customer ID number: 1
+Remaining credit balance after all purchases (a dollar amount): 500.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Ying Zhan
+Customer ID number: 2
+Remaining credit balance after all purchases (a dollar amount): 65.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Sejong Yoon
+Customer ID number: 3
+Remaining credit balance after all purchases (a dollar amount): 10.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Yuanzhen Gu
+Customer ID number: 4
+Remaining credit balance after all purchases (a dollar amount): 80.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Zi Yan
+Customer ID number: 5
+Remaining credit balance after all purchases (a dollar amount): 100.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===

@@ -1,0 +1,52 @@
+./books database.txt one_order.txt categories.txt
+ORDER CONFIRMATION:
+ Book: I Could Pee on This: And Other Poems by Cats
+ Price: 7.490000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+
+
+
+Total Revenue Gained: 7.490000
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Brian Russell
+Customer ID number: 1
+Remaining credit balance after all purchases (a dollar amount): 492.510000
+### SUCCESSFUL ORDERS ###
+"I Could Pee on This: And Other Poems by Cats"|7.490000|492.510000
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Ying Zhan
+Customer ID number: 2
+Remaining credit balance after all purchases (a dollar amount): 65.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Sejong Yoon
+Customer ID number: 3
+Remaining credit balance after all purchases (a dollar amount): 10.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Yuanzhen Gu
+Customer ID number: 4
+Remaining credit balance after all purchases (a dollar amount): 80.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Zi Yan
+Customer ID number: 5
+Remaining credit balance after all purchases (a dollar amount): 100.000000
+### SUCCESSFUL ORDERS ###
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===

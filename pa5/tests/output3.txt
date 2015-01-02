@@ -1,0 +1,280 @@
+-bash-4.1$ ./books database.txt orders.txt categories.txt
+Producer is waiting due to a full queue for category: SPORTS01
+
+Space is available in the queue for SPORTS01, producer resuming
+
+ORDER CONFIRMATION:
+ Book: The Immortal Life of Henrietta Lacks
+ Price: 8.910000
+Shipping to: Yuanzhen Gu
+ 45 Kilmer Road, Edison, New Jersey, 08817
+
+ORDER CONFIRMATION:
+ Book: I Could Pee on This: And Other Poems by Cats
+ Price: 7.490000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER CONFIRMATION:
+ Book: Across Islands and Oceans
+ Price: 1.990000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+Producer is waiting due to a full queue for category: SPORTS01
+
+Space is available in the queue for SPORTS01, producer resuming
+
+ORDER CONFIRMATION:
+ Book: How to Create a Mind: The Secret of Human Thought Revealed
+ Price: 16.400000
+Shipping to: Ying Zhan
+ 3100 Hamilton Blvd, South Plainfield, New Jersey, 07080
+
+ORDER CONFIRMATION:
+ Book: Following Atticus (P.S.)
+ Price: 2.990000
+Shipping to: Yuanzhen Gu
+ 45 Kilmer Road, Edison, New Jersey, 08817
+
+ORDER CONFIRMATION:
+ Book: 365 Cats 2013 Page-A-Day Calendar
+ Price: 9.660000
+Shipping to: Yuanzhen Gu
+ 45 Kilmer Road, Edison, New Jersey, 08817
+
+ORDER CONFIRMATION:
+ Book: Underwater Dogs
+ Price: 11.600000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER CONFIRMATION:
+ Book: A Letter to My Dog: Notes to Our Best Friends
+ Price: 16.470000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER CONFIRMATION:
+ Book: The Handbuilt Home: 34 Simple Stylish and Budget-Friendly Woodworking Projects for Every Room
+ Price: 15.630000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+Order for Really good book neglected. Dropping order.
+ Reason: UserID 6 not found.
+
+ORDER CONFIRMATION:
+ Book: The Endurance: Shackleton's Legendary Antarctic Expedition
+ Price: 21.290000
+Shipping to: Zi Yan
+ 100 Middlesex Essex Turnpike, Iselin, New Jersey, 08830
+
+Producer is waiting due to a full queue for category: SPORTS01
+
+Space is available in the queue for SPORTS01, producer resuming
+
+ORDER CONFIRMATION:
+ Book: The California Surf Project
+ Price: 22.160000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+Producer is waiting due to a full queue for category: SPORTS01
+
+Space is available in the queue for SPORTS01, producer resuming
+
+ORDER CONFIRMATION:
+ Book: Soul Surfer: A True Story of Faith, Family, and Fighting to Get Back on the Board
+ Price: 7.990000
+Shipping to: Ying Zhan
+ 3100 Hamilton Blvd, South Plainfield, New Jersey, 07080
+
+ORDER CONFIRMATION:
+ Book: Swimming Studies
+ Price: 19.800000
+Shipping to: Ying Zhan
+ 3100 Hamilton Blvd, South Plainfield, New Jersey, 07080
+
+ORDER CONFIRMATION:
+ Book: The Greatest Hockey Stories Ever Told: The Finest Writers on Ice
+ Price: 9.710000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER CONFIRMATION:
+ Book: Fifty Places to Dive Before You Die: Diving Experts Share the World's Greatest Destinations
+ Price: 16.470000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER REJECTION:
+ Customer: Ying Zhan has budget 20.810000
+Book: The History of Surfing
+ Price: 31.500000
+
+ORDER CONFIRMATION:
+ Book: Soul Surfer
+ Price: 7.990000
+Shipping to: Sejong Yoon
+ 200 Promenade Boulevard, Bridgewater, New Jersey, 08807
+
+Producer is waiting due to a full queue for category: POLITICS01
+
+ORDER CONFIRMATION:
+ Book: How Children Succeed: Grit, Curiosity, and the Hidden Power of Character
+ Price: 9.450000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER CONFIRMATION:
+ Book: My Year in Meals
+ Price: 16.910000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+Space is available in the queue for POLITICS01, producer resuming
+
+ORDER CONFIRMATION:
+ Book: Damaged: The Heartbreaking True Story of a Forgotten Child
+ Price: 0.990000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+Producer is waiting due to a full queue for category: POLITICS01
+
+Space is available in the queue for POLITICS01, producer resuming
+
+ORDER CONFIRMATION:
+ Book: Origami Fun Kit for Beginners (Dover Fun Kit)
+ Price: 10.170000
+Shipping to: Yuanzhen Gu
+ 45 Kilmer Road, Edison, New Jersey, 08817
+
+ORDER CONFIRMATION:
+ Book: Tasting Beer: An Insider's Guide to the World's Greatest Drink
+ Price: 11.310000
+Shipping to: Zi Yan
+ 100 Middlesex Essex Turnpike, Iselin, New Jersey, 08830
+
+ORDER CONFIRMATION:
+ Book: Star Wars: The Ultimate Action Figure Collection
+ Price: 21.380000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER REJECTION:
+ Customer: Sejong Yoon has budget 2.010000
+Book: Hockey; The Math of the Game (Sports Illustrated Kids: Sports Math)
+ Price: 7.950000
+
+ORDER CONFIRMATION:
+ Book: The Outpost: An Untold Story of American Valor
+ Price: 12.990000
+Shipping to: Yuanzhen Gu
+ 45 Kilmer Road, Edison, New Jersey, 08817
+
+ORDER CONFIRMATION:
+ Book: Outliers: The Story of Success
+ Price: 9.830000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER CONFIRMATION:
+ Book: Thomas Jefferson: The Art of Power
+ Price: 18.980000
+Shipping to: Yuanzhen Gu
+ 45 Kilmer Road, Edison, New Jersey, 08817
+
+ORDER CONFIRMATION:
+ Book: The Joy of Hate: How to Triumph over Whiners in the Age of Phony Outrage
+ Price: 15.600000
+Shipping to: Ying Zhan
+ 3100 Hamilton Blvd, South Plainfield, New Jersey, 07080
+
+ORDER CONFIRMATION:
+ Book: SuperFreakonomics
+ Price: 3.790000
+Shipping to: Brian Russell
+ 110 Frelinghuysen Rd., Piscataway, New Jersey, 08854
+
+ORDER CONFIRMATION:
+ Book: Stop Living In This Land. Go To The Everlasting World Of Happiness. Live There Forever.
+ Price: 7.190000
+Shipping to: Yuanzhen Gu
+ 45 Kilmer Road, Edison, New Jersey, 08817
+
+
+
+
+Total Revenue Gained: 335.140000
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Brian Russell
+Customer ID number: 1
+Remaining credit balance after all purchases (a dollar amount): 336.130000
+### SUCCESSFUL ORDERS ###
+"SuperFreakonomics"|3.790000|336.130000
+"Outliers: The Story of Success"|9.830000|339.920000
+"Star Wars: The Ultimate Action Figure Collection"|21.380000|349.750000
+"Damaged: The Heartbreaking True Story of a Forgotten Child"|0.990000|371.130000
+"Fifty Places to Dive Before You Die: Diving Experts Share the World's Greatest Destinations"|16.470000|372.120000
+"The Greatest Hockey Stories Ever Told: The Finest Writers on Ice"|9.710000|388.590000
+"My Year in Meals"|16.910000|398.300000
+"The California Surf Project"|22.160000|415.210000
+"The Handbuilt Home: 34 Simple Stylish and Budget-Friendly Woodworking Projects for Every Room"|15.630000|437.370000
+"A Letter to My Dog: Notes to Our Best Friends"|16.470000|453.000000
+"Underwater Dogs"|11.600000|469.470000
+"How Children Succeed: Grit, Curiosity, and the Hidden Power of Character"|9.450000|481.070000
+"Across Islands and Oceans"|1.990000|490.520000
+"I Could Pee on This: And Other Poems by Cats"|7.490000|490.520000
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Ying Zhan
+Customer ID number: 2
+Remaining credit balance after all purchases (a dollar amount): 5.210000
+### SUCCESSFUL ORDERS ###
+"The Joy of Hate: How to Triumph over Whiners in the Age of Phony Outrage"|15.600000|5.210000
+"Swimming Studies"|19.800000|20.810000
+"Soul Surfer: A True Story of Faith, Family, and Fighting to Get Back on the Board"|7.990000|40.610000
+"How to Create a Mind: The Secret of Human Thought Revealed"|16.400000|48.600000
+### REJECTED ORDERS ###
+"The History of Surfing"|31.500000
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Sejong Yoon
+Customer ID number: 3
+Remaining credit balance after all purchases (a dollar amount): 2.010000
+### SUCCESSFUL ORDERS ###
+"Soul Surfer"|7.990000|2.010000
+### REJECTED ORDERS ###
+"Hockey; The Math of the Game (Sports Illustrated Kids: Sports Math)"|7.950000
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Yuanzhen Gu
+Customer ID number: 4
+Remaining credit balance after all purchases (a dollar amount): 9.110000
+### SUCCESSFUL ORDERS ###
+"Stop Living In This Land. Go To The Everlasting World Of Happiness. Live There Forever."|7.190000|9.110000
+"Thomas Jefferson: The Art of Power"|18.980000|16.300000
+"The Outpost: An Untold Story of American Valor"|12.990000|35.280000
+"Origami Fun Kit for Beginners (Dover Fun Kit)"|10.170000|48.270000
+"365 Cats 2013 Page-A-Day Calendar"|9.660000|58.440000
+"Following Atticus (P.S.)"|2.990000|68.100000
+"The Immortal Life of Henrietta Lacks"|8.910000|71.090000
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
+
+=== BEGIN CUSTOMER INFO ===
+Customer name: Zi Yan
+Customer ID number: 5
+Remaining credit balance after all purchases (a dollar amount): 67.400000
+### SUCCESSFUL ORDERS ###
+"Tasting Beer: An Insider's Guide to the World's Greatest Drink"|11.310000|67.400000
+"The Endurance: Shackleton's Legendary Antarctic Expedition"|21.290000|78.710000
+### REJECTED ORDERS ###
+=== END CUSTOMER INFO ===
